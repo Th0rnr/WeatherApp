@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #00b4db, #0083b0);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+    color: #0083b0;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 70%;
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+button {
+    padding: 12px 20px;
+    background: #0083b0;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #006a8e;
+}
+
+#error-message {
+    color: #e74c3c;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.loading {
+    display: none;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-left-color: #0083b0;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.weather-card {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 20px;
+    display: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.weather-icon {
+    margin-bottom: 15px;
+}
+
+.weather-icon img {
+    width: 80px;
+    height: 80px;
+}
+
+.weather-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.temperature {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #0083b0;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+@media (max-width: 400px) {
+    .search-box {
+        flex-direction: column;
+    }
+    
+    input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    button {
+        width: 100%;
+    }
+}

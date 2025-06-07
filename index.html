@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worldwide Weather App</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Worldwide Weather Application</h1>
+        <h2>Get the latest weather updates from around the world!</h2>
+        
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name">
+        </div>
+
+        <div class="Button">
+            <button id="search-btn">Get Weather</button>
+        </div>
+        
+        <div id="error-message"></div>
+        
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+        </div>
+        
+        <div id="weather-result" class="weather-card">
+            <div class="weather-icon">
+                <img id="weather-icon" src="" alt="Weather Icon">
+            </div>
+            <div class="weather-info">
+                <h3 id="city-name"></h3>
+                <p id="country"></p>
+                <div class="temperature">
+                    <span id="temperature"></span>
+                </div>
+                <p id="description"></p>
+                <div class="details">
+                    <div class="col">
+                        <div id="humidity"></div>
+                    </div>
+                    <div class="col">
+                        <div id="wind-speed"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Worldwide Weather App. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="scripts/script.js"></script>
+</body>
+</html>
